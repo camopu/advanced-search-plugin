@@ -1,0 +1,221 @@
+/* Container for search form and results */
+.asp-search-container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Search Form Styles */
+.asp-search-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#asp-search-input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+
+.asp-search-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0073aa;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.asp-search-form button:hover {
+  background-color: #005177;
+}
+
+/* Styles for separate search result */
+[class^=ais-] {
+  font-size: inherit !important;
+  box-sizing: border-box;
+}
+
+.asp-result {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.asp-result:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.asp-result h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.asp-result h3 a {
+  color: #0073aa;
+  text-decoration: none;
+}
+
+.asp-result h3 a:hover {
+  text-decoration: underline;
+}
+
+.asp-result p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.asp-hit-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.asp-hit-thumbnail {
+  object-fit: cover;
+  width: 100%;
+  height: 10rem;
+}
+
+.asp-hit-content {
+  flex: 1;
+}
+
+.asp-hit-item h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.asp-hit-item p {
+  margin-top: 0;
+}
+
+.ais-Highlight {
+  background-color: yellow;
+  font-style: normal;
+}
+
+/* Styles to highlight matches in search results */
+.ais-highlight {
+  background-color: #fffbcc;
+  font-style: normal;
+}
+
+/* Pagination Styles */
+.asp-pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.asp-pagination .page {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #0073aa;
+  text-decoration: none;
+}
+
+.asp-pagination .page.current {
+  background-color: #0073aa;
+  color: white;
+}
+
+.ais-SearchBox-submit {
+  display: none !important;
+}
+
+.ais-SearchBox-reset,
+.ais-SearchBox-loadingIndicator {
+  top: 25% !important;
+}
+
+.ais-Hits-item {
+  overflow: hidden;
+}
+
+/* List style */
+
+.asp-hit-list {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.ais-Hits-list.list .ais-Hits-item {
+  border: none !important;
+  border-bottom: 1px solid #e3e5ec !important;
+  width: 100% !important;
+  box-shadow: none !important;
+}
+
+.ais-Hits-list.list {
+  display: inline-block;
+  width: 100%;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.ais-Hits-list.list .asp-hit-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.ais-Hits-list.list .asp-hit-thumbnail {
+  float: left;
+  margin-right: 15px;
+  width: 100px;
+  height: auto;
+}
+
+.ais-Hits-list.list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Grid style */
+
+.ais-Hits-list.grid .asp-hit-thumbnail {
+  width: 100%;
+  height: 150px !important;
+}
+
+.ais-Hits-list.grid::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Adaptive Design */
+@media (max-width: 1024px) {
+
+  .asp-hit-list.grid .ais-Hits-item {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .asp-search-form {
+      flex-direction: column;
+  }
+
+  #asp-search-input {
+      border-radius: 4px 4px 0 0;
+  }
+
+  .asp-search-form button {
+      border-radius: 0 0 4px 4px;
+  }
+
+  .ais-Hits-item {
+    width: 100%;
+  }
+}

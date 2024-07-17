@@ -1,0 +1,41 @@
+#asp-connection-result {
+  display: block;
+  margin-top:1em;
+}
+
+#asp-test-algolia-connection {
+  position: relative;
+}
+
+#asp-test-algolia-connection .spinner {
+  position: absolute;
+  right: -50px;
+  transform: translateY(-50%);
+  float: none;
+  visibility: visible;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+#asp-test-algolia-connection .spinner.is-active {
+  opacity: 1;
+}
+
+.asp-toggle-visibility {
+  margin-left: 1em;
+}
+
+#asp-clear-cache {
+  margin-right: 10px;
+}
+
+#asp-clear-cache + .spinner {
+  float: none;
+  visibility: visible;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+#asp-clear-cache + .spinner.is-active {
+  opacity: 1;
+}
