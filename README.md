@@ -7,7 +7,7 @@ The Advanced Search Plugin is a WordPress plugin that enhances search functional
 
 <h3>Plugin Installation</h3>
 <ol>
-<li>Download the ZIP archive of the Advanced Search Plugin.</li>
+<li><a href="https://github.com/camopu/advanced-search-plugin/blob/master/releases/advanced-search-plugin.zip" target="_blank">Download the ZIP archive</a> of the Advanced Search Plugin.</li>
 <li>Log in to your WordPress admin panel.</li>
 <li>Navigate to "Plugins" -> "Add New".</li>
 <li>Click the "Upload Plugin" button.</li>
