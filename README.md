@@ -2,7 +2,7 @@
 The Advanced Search Plugin is a WordPress plugin that enhances search functionality using Algolia integration. It provides a more powerful and efficient search experience compared to the default WordPress search.
 
 <h2>Installing and using:</h2>
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img width="573" alt="Screenshot_5" src="https://github.com/user-attachments/assets/4a34d9c5-28cf-4c89-ac61-65c5b8ded34a"><br><strong>Click here to see the video</strong></a>
+<a href="https://www.youtube.com/watch?v=er-TDbLktUY&feature=youtu.be"><img width="573" alt="Screenshot_5" src="https://github.com/user-attachments/assets/4a34d9c5-28cf-4c89-ac61-65c5b8ded34a"><br><strong>Click here to see the video</strong></a>
 
 <h3>Plugin Installation</h3>
 <ol>
